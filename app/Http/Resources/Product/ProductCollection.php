@@ -6,6 +6,10 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class ProductCollection extends JsonResource
 {
+    public function authorize()
+    {
+        return true;
+    }
     /**
      * Transform the resource collection into an array.
      *
