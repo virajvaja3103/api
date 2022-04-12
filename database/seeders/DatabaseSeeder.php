@@ -18,20 +18,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // Product::factory(50)->create();
-        // Review::factory(300)->create();
-        // Product::factory()
-        // ->count(50)
-        // ->hasPosts(1)
-        // ->create();
-        // $this->call([
-        //     ProductFactory::class,
-        //     ReviewFactory::class,
-        // ]);
-        // factory(App\MOdel\Product::class,50)->create();
-        // \App\Models\MOdel\Product::factory(50)->create();
-        // factory(App\MOdel\Review::class,300)->create();
-        // \App\Models\MOdel\Review::factory(300)->create();
-
+        $this->call(ProductSeeder::class);
+        $this->call(ReviewSeeder::class);
     }
 }
